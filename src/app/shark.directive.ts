@@ -21,6 +21,7 @@ export class SharkDirective {
     //renderer.appendChild(this.templateRef.elementRef.nativeElement /* nativeElement */, shark);
 
     var element  = (elem.nativeElement as HTMLInputElement).value;//document.getElementById("janusz");
+    console.log(element);
     //this.viewContainer.createComponent('Shark ');
     this.viewContainer.createEmbeddedView(this.templateRef);
   }

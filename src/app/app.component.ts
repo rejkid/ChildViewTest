@@ -17,7 +17,7 @@ export class AppComponent implements AfterViewInit {
   name: string = "Janusz";
 
   constructor(private elem: ElementRef/* , private templateRef: TemplateRef<any> */) {
-    //var element = (templateRef.elementRef.nativeElement as HTMLInputElement);
+    var element  = (elem.nativeElement as HTMLInputElement).value;
 
     console.log(this.extraCreature);
   }
@@ -32,7 +32,10 @@ export class AppComponent implements AfterViewInit {
     console.log(this.elem.nativeElement);
     console.log(this.extraCreature); // Dolphin
 
-    var val = this.someElement.nativeElement.textContent;
-    console.log(this.someElement.nativeElement.textContent = 'Janusz');
+    //var val = this.someElement.nativeElement.textContent;
+    //console.log(this.someElement.nativeElement.textContent = 'Janusz');
+  }
+  onProcess(event: any) {
+    console.log(this.elem.nativeElement);
   }
 }
