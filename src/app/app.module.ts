@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { SharkDirective } from './shark.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SharkDirective
   ],
   imports: [
     BrowserModule
